@@ -17,8 +17,6 @@
 		9C11B20B17FC65E700AEE9BE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C11B20A17FC65E700AEE9BE /* XCTest.framework */; };
 		9C11B20C17FC65E700AEE9BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C11B1F117FC65E700AEE9BE /* Foundation.framework */; };
 		9C11B20D17FC65E700AEE9BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C11B1F517FC65E700AEE9BE /* UIKit.framework */; };
-		9C11B21517FC65E700AEE9BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C11B21317FC65E700AEE9BE /* InfoPlist.strings */; };
-		9C11B21717FC65E700AEE9BE /* FeaturesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C11B21617FC65E700AEE9BE /* FeaturesTests.m */; };
 		9C11B22417FC667F00AEE9BE /* NetworkInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C11B22317FC667F00AEE9BE /* NetworkInfo.m */; };
 /* End PBXBuildFile section */
 
@@ -46,9 +44,6 @@
 		9C11B20317FC65E700AEE9BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9C11B20917FC65E700AEE9BE /* FeaturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FeaturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C11B20A17FC65E700AEE9BE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		9C11B21217FC65E700AEE9BE /* FeaturesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FeaturesTests-Info.plist"; sourceTree = "<group>"; };
-		9C11B21417FC65E700AEE9BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9C11B21617FC65E700AEE9BE /* FeaturesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeaturesTests.m; sourceTree = "<group>"; };
 		9C11B22217FC667F00AEE9BE /* NetworkInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkInfo.h; sourceTree = "<group>"; };
 		9C11B22317FC667F00AEE9BE /* NetworkInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkInfo.m; sourceTree = "<group>"; };
 		9C11B22517FC66D700AEE9BE /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
@@ -82,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				9C11B1F717FC65E700AEE9BE /* Features */,
-				9C11B21017FC65E700AEE9BE /* FeaturesTests */,
 				9C11B1F017FC65E700AEE9BE /* Frameworks */,
 				9C11B1EF17FC65E700AEE9BE /* Products */,
 			);
@@ -127,24 +121,6 @@
 				9C11B1FA17FC65E700AEE9BE /* InfoPlist.strings */,
 				9C11B1FD17FC65E700AEE9BE /* main.m */,
 				9C11B1FF17FC65E700AEE9BE /* Features-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9C11B21017FC65E700AEE9BE /* FeaturesTests */ = {
-			isa = PBXGroup;
-			children = (
-				9C11B21617FC65E700AEE9BE /* FeaturesTests.m */,
-				9C11B21117FC65E700AEE9BE /* Supporting Files */,
-			);
-			path = FeaturesTests;
-			sourceTree = "<group>";
-		};
-		9C11B21117FC65E700AEE9BE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9C11B21217FC65E700AEE9BE /* FeaturesTests-Info.plist */,
-				9C11B21317FC65E700AEE9BE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -243,7 +219,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C11B21517FC65E700AEE9BE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +239,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C11B21717FC65E700AEE9BE /* FeaturesTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,14 +257,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				9C11B1FB17FC65E700AEE9BE /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9C11B21317FC65E700AEE9BE /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C11B21417FC65E700AEE9BE /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -378,7 +344,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Features/Features-Prefix.pch";
 				INFOPLIST_FILE = "Features/Features-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,7 +359,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Features/Features-Prefix.pch";
 				INFOPLIST_FILE = "Features/Features-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -457,6 +427,7 @@
 				9C11B21C17FC65E700AEE9BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C11B21D17FC65E700AEE9BE /* Build configuration list for PBXNativeTarget "FeaturesTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +436,7 @@
 				9C11B21F17FC65E700AEE9BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
